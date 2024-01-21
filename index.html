@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Scholtz</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='20' viewBox='0 0 640 512'%3E%3Cpath d='M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/690b4f18ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <button class="hamburguer"></button>
+            <ul id="menu-list">
+                <li><a href="index.html" id="nav-menu-home"></a></li>
+                <li><a href="#page-about-me" id="nav-menu-about-me"></a></li>
+                <li><a href="#page-projects" id="nav-menu-projects"></a></li>
+                <li><a href="#page-experience-title" id="nav-menu-contact"></a></li>
+                <div id="languages">
+                    <li><a href="" id="select-languages"> <i class="fa-solid fa-globe"></i></a>
+                        <ol class="language-options">
+                            <li><a href="#" id="language-option-en">English<img src="media/usa.png" alt="usa flag"></i></a></li>
+                            <li><a href="#" id="language-option-fr">Français<img src="media/ca.png" alt="ca flag"></a></li>
+                            <li><a href="#" id="language-option-pt">Português<img src="media/br.png" alt="br flag"></a></li>
+                        </ol>
+                    </li>
+                </div>
+                <li><a href="#" id="switch-light-to-dark"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="page-main">
+            <h1 id="main-page-hello"></h1>
+            <h1 id="main-page-introduction"></h1>
+            <h1 id="main-page-profession"></h1>
+            <img id="me" src="media/me.JPG" alt="">
+            <a href="mailto:dbarreto499@gmail.com">
+                <button id="main-page-contact-me-btn"></button>  
+            </a>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/daniel-barreto-scholtz-2871a421b/" target="_blank" id="page-main-btn-linkedin">
+                    <button><i class="fa-brands fa-linkedin-in"></i></i></button>
+                </a>
+                <a href="https://github.com/danielbscholtz" target="_blank" id="page-main-btn-github">
+                    <button><i class="fa-brands fa-github"></i></i></button>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+  
+    <div id="page-about-me">
+        <section>
+            <h2 id="about-me-page-title"></h2>
+            <p id="about-me-page-paragraph-one"></p>
+
+            <p id="about-me-page-paragraph-two"></p>
+                
+            <p id="about-me-page-paragraph-three"></p>
+        </section>
+    </div>
+
+    <div id="page-experience-title">
+        <h2 id="page-projects-experience"></h2>
+    </div>
+
+    <div id="page-experience">
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="csharp">
+                        <h2>C#</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-csharp" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="python">
+                        <h2>Python</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-python" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="JavaScript">
+                        <h2>JS</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-js" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="java">
+                        <h2>Java</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-java" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="html-css">
+                        <h2>HTML/CSS</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-html-css" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="sql">
+                        <h2>SQL</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-sql" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="sql">
+                        <h2>MongoDB</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-mongodb" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+    
+        <div class="skills">
+            <div class="outer">
+                <div class="inner">
+                    <div id="sql">
+                        <h2>Postman</h2>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle id="circle-postman" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+    </div> <!-- final of page experience-->
+
+    <div id="page-projects">
+        <h2 id="page-projects-title"></h2>
+
+        <div id="project-1">
+            <a href="https://github.com/danielbscholtz/French-Verb-Conjugator-API" target="_blank">
+                <img src="media/python.png">
+            </a>
+            <h4 id="page-projects-python-api"></h4>
+        </div>
+
+        <div id="project-2">
+            <a href="https://github.com/danielbscholtz/LINQ" target="_blank">
+                <img src="media/csharp.png">
+            </a>
+            <h4 id="page-projects-csharp-linq"></h4>
+        </div>
+
+        <div>
+            <a href="https://github.com/danielbscholtz/Machine-Learning-LinearRegression" target="_blank">
+                <img src="media/python.png">
+            </a>
+            <h4 id="page-projects-machine-learning"></h4>
+        </div>
+
+        <div>
+            <a href="" target="_blank">
+                <img src="media/html-css-js.webp">
+            </a>
+            <h4 id="page-projects-portifolio"></h4>
+        </div>
+        
+        <div>
+            <a href="https://danielbscholtz.github.io/Eden-Coffee-Website/" target="_blank">
+                <img src="media/html-css-js.webp">
+            </a>
+            <h4 id="page-projects-eden-coffee"></h4>
+        </div>
+
+        <div>
+            <a href="https://github.com/danielbscholtz/Managment-System-Teachers" target="_blank">
+                <img src="media/csharp.png">
+            </a>
+            <h4 id="page-projects-managment-teachers"></h4>
+        </div>
+
+        <div>
+            <a href="https://github.com/danielbscholtz/App-French-Verb-Conjugator" target="_blank">
+                <img src="media/swift.png">
+            </a>
+            <h4 id="page-projects-ios-app"></h4>
+        </div>
+
+        <div>
+            <a href="https://github.com/danielbscholtz/Digit-Dash-Game" target="_blank">
+                <img src="media/php.png">
+            </a>
+            <h4 id="page-projects-digit-game"></h4>
+        </div>
+    </div><!-- final of page projects-->
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3 id="contact-me"></h3>
+            <p>Email: <a href="mailto:dbarreto499@gmail.com">dbarreto499@gmail.com</a></p>
+        </div>
+        <div class="social-links">
+            <h3 id="social-media"></h3>
+            <a href="https://www.linkedin.com/in/daniel-barreto-scholtz-2871a421b/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/danielbscholtz" target="_blank">GitHub</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Daniel Scholtz</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

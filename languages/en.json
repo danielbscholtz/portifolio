@@ -1,0 +1,27 @@
+{
+    "nav-menu-home": "Home",
+    "nav-menu-about-me": "About me",
+    "nav-menu-projects": "Projects",
+    "nav-menu-contact": "Experience",
+    "main-page-hello": "Hello World!",
+    "main-page-introduction": "I'm Daniel Scholtz.",
+    "main-page-profession": "Software Developer",
+    "main-page-contact-me-btn":  "Contact-me <i class='fa-regular fa-envelope'></i>",
+    "about-me-page-title": "About me",
+    "about-me-page-paragraph-one": "Software developer based in Montreal, currently studying Computer Programming at Lasalle College. Proficient in Python, Java, C#, JS, HTML, CSS, and knowledgeable in databases such as MySQL, MongoDB, and SSMS.",
+    "about-me-page-paragraph-two": "In Brazil, I served as a lieutenant in the Brazilian Army for 4 years, acquiring skills in teamwork, problem-solving, effective communication, leadership, time management, conflict resolution, critical thinking, and adaptability.",
+    "about-me-page-paragraph-three": "I'm committed to applying a disciplined approach and my technical skills to excel in software development. Open to connecting and collaborating on impactful projects.",
+    "page-projects-title": "Projects",
+    "page-projects-python-api": "API using Python.",
+    "page-projects-csharp-linq": "Manipulating database with LINQ.",
+    "page-projects-eden-coffee": "Website for a coffee shop.",
+    "page-projects-machine-learning": "AI models using multiple and linear regression.",
+    "page-projects-managment-teachers": "System for college management.",
+    "page-projects-ios-app": "iOS application for French verb conjugation.",
+    "page-projects-digit-game": "Logic game for kids.",
+    "page-projects-portifolio": "My portifolio website.",
+    "page-projects-experience": "Experience",
+    "contact-me": "Contact me",
+    "social-media": "Social Media"
+  }
+  

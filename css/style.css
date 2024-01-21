@@ -1,0 +1,796 @@
+  :root {
+    --backgroundImage: url(../media/background-image-light.jpg);
+    --fontColor: rgba(15, 24, 65, 0.815);
+    --fontColorHover: #f3f1f1;
+  }
+
+  [data-theme="dark"] {
+    --backgroundImage: url(../media/background-image-dark.jpg);
+    --fontColor: #f3e0d0;
+    --fontColorHover: rgba(160, 174, 236, 0.815);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    min-height: 100vh;
+    background-image: var(--backgroundImage);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.4s ease; 
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+
+  #menu {
+      padding: 5px;
+      z-index: 999;
+  }
+    
+  #menu ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 8px;
+      margin: 0;
+      list-style: none;
+    }
+    
+  #menu li a {
+      color: var(--fontColor);
+      text-decoration: none;
+      font-family: 'Roboto Mono', monospace;
+      font-size: large;
+      padding-block: 10px;
+    }
+
+ 
+
+    #menu li a:hover{
+      color: var(--fontColorHover);
+    }
+
+  #languages ol {
+    display: none;
+    width: 100px;  
+    border: 1px solid var(--fontColor);
+    list-style: none;
+  }
+
+  #languages ol.show {
+    display: block;
+    position: relative;
+  }
+
+  #languages ol li a {
+    font-size: small;
+  }
+
+  #languages ol li {
+    margin: 0 0 5px 5px;
+    padding-top: 10px;
+  }
+
+  #languages ol li img {
+    width: 15px;
+  }
+
+  .hamburguer{
+    margin-top: 3vw;
+    margin-left: 88vw;
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--fontColor);
+    cursor: pointer;
+  }
+
+  .hamburguer::before,
+  .hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--fontColor);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .hamburguer.menu-open{
+    border-top-color: transparent;
+  }
+
+  .hamburguer.menu-open::before {
+    transform: rotate(135deg);
+  }
+  
+  .hamburguer.menu-open::after {
+    transform: rotate(-135deg);
+    top: -7px
+  }
+
+  #page-main {
+      display: grid;
+      grid-template-columns: 50fr 50fr;
+      grid-template-rows: 0.1fr 0fr 0.1fr; 
+      justify-content: space-between;
+      height: 100vh;
+  }
+
+  #page-main #me {
+      border-radius: 50%;
+      border: 10px solid var(--fontColor);
+      width: 50%;
+      margin-top: 20%;
+      grid-column: 2;
+      grid-row: 1/3; 
+      filter:
+      grayscale(10%) brightness(80%);
+  }
+
+    #page-main #me:hover {
+      transform: scale(1.1);
+      transition: 0.4s;
+      filter:
+      grayscale(0%) brightness(100%);
+    }
+
+    #page-main #main-page-hello {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 250%;
+        color:  var(--fontColor);
+        text-align: center;
+        margin-top: 35%;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+  #page-main #main-page-introduction {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 250%;
+    color:  var(--fontColor);
+    text-align: center;
+    margin-top: 43%;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #page-main #main-page-profession {
+      font-family: 'Roboto Mono', monospace;
+      color:  var(--fontColor);
+      text-align: center;
+      font-size: 150%;
+      margin-top: 52%;
+      grid-column: 1;
+      grid-row: 1;
+  }
+
+  #page-main a {
+    text-decoration: none;
+  }
+
+  #page-main button {
+    color: var(--fontColor);
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--fontColorHover);
+    border: 3px solid var(--fontColor);
+    border-radius: 15px;
+    font-size: large;
+    width: fit-content;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #main-page-contact-me-btn{
+    margin-left: 37%;
+    margin-top: 2%;
+  }
+
+  .social{
+    margin-top: 1.5%;
+  }
+
+  .social #page-main-btn-github {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1%;
+  }
+
+  .social #page-main-btn-linkedin {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 40%;
+  }
+
+
+  #page-main button:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+
+  #page-about-me{
+    height: 40vh;
+  }
+
+  #page-about-me h2 {
+    font-family: 'Roboto Mono', monospace;
+    color:  var(--fontColor);
+    text-align: center;
+  }
+
+  #page-about-me p {
+    font-family: 'Roboto Mono', monospace;
+    color:  var(--fontColor);
+    margin: 5%;
+    text-align: justify;
+  }
+
+  #page-projects {
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-rows: 3fr 8fr 8fr;
+    margin-top: 10%;
+  }
+
+  #page-projects h2 {
+    font-family: 'Roboto Mono', monospace;
+    color:  var(--fontColor);
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 85%;
+    margin-bottom: 10%;
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  #page-projects img {
+    width: 50%;
+    height: 50%;
+    border: 4px solid var(--fontColor);
+    border-radius: 20%;
+    margin: 10% 0 0 25%;
+  }
+
+  #page-projects img:hover{
+    transform: scale(1.1);
+    transform: 4s;
+  }
+
+  #page-projects h4 {
+    font-family: 'Roboto Mono', monospace;
+    color:  var(--fontColor);
+    text-align: center;
+    margin: 5%;
+  }
+
+  #page-projects li a {
+    color: var(--fontColor);
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+  }
+
+  #project-1 {
+    grid-row: 2;
+  }
+
+  #project-2{
+    grid-column: 2;
+  }
+
+  #page-experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70vh;
+  }
+
+  #page-experience-title{
+    font-family: 'Roboto Mono', monospace;
+    color:  var(--fontColor);
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  #page-experience h2 {
+    font-family: 'Roboto Mono', monospace;
+    color:  var(--fontColor);
+    text-align: center;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+  }
+
+  .outer {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15),
+                -1px -1px 10px -1px rgba(255, 255, 255, 0.7);
+  }
+
+  .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: inset -2px -2px 0px -1px rgba(0, 0, 0, 0.2),
+                inset 0px 0px 2px 1px rgba(255, 255, 255, 0.7),
+                -2px -2px 10px rgba(0, 0, 0, 0.15),
+                2px 2px 10px rgba(255, 255, 255, 0.7);
+  }
+
+  svg {
+    position: absolute;
+    max-width: 100%; 
+  }
+
+  circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 0;
+  }
+
+  #circle-python{
+    animation: anim-py 2s linear forwards;
+  }
+
+  #circle-csharp{
+    animation: anim-csharp 2s linear forwards;
+  }
+
+  #circle-js{
+    animation: anim-js 2s linear forwards;
+  }
+
+  #circle-java{
+    animation: anim-java 2s linear forwards;
+  }
+
+  #circle-html-css{
+    animation: anim-html-css 2s linear forwards;
+  }
+
+  #circle-sql{
+    animation: anim-sql 2s linear forwards;
+  }
+
+  #circle-mongodb{
+    animation: anim-mongodb 2s linear forwards;
+  }
+
+  #circle-postman{
+    animation: anim-postman 2s linear forwards;
+  }
+
+  @keyframes anim-py {
+    100% {
+      stroke-dashoffset: 240;
+    }
+  }
+
+  @keyframes anim-csharp {
+    100% {
+      stroke-dashoffset: 150;
+    }
+  }
+
+  @keyframes anim-js {
+    100% {
+      stroke-dashoffset: 180;
+    }
+  }
+
+  @keyframes anim-java {
+    100% {
+      stroke-dashoffset: 260;
+    }
+  }
+
+  @keyframes anim-html-css {
+    100% {
+      stroke-dashoffset: 180;
+    }
+  }
+
+  @keyframes anim-sql {
+    100% {
+      stroke-dashoffset: 220;
+    }
+  }
+
+  @keyframes anim-mongodb {
+    100% {
+      stroke-dashoffset: 250;
+    }
+  }
+
+  @keyframes anim-postman {
+    100% {
+      stroke-dashoffset: 300;
+    }
+  }
+
+  footer {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background-color: var(--fontColor); 
+    color: var(--fontColorHover); 
+    padding: 40px; 
+    margin-top: 30px;
+    text-align: center; 
+  }
+
+  footer a {
+    color: rgb(128, 158, 255);
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer a:hover {
+    text-decoration: underline; 
+  }
+
+  footer h3{
+    padding: 0.2%;
+  }
+
+  footer div{
+    padding: 0.4%;
+  }
+
+@media (max-width: 1400px) {
+
+  #page-main {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+  }
+
+  #page-main #main-page-hello{
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 55%;
+  }
+
+  #page-main #main-page-introduction{
+    font-size: 40px;
+    margin-top: 62%;
+    margin-left: 15%;
+  }
+
+  #page-main #main-page-profession{
+    font-size: 30px;
+    margin-top: 70%;
+    margin-left: 15%;
+  }
+
+  #page-main #me{
+    width: 70%;
+    margin-top: 65%;
+    border: 7px solid var(--fontColor);
+  }
+
+  #page-main button{
+    padding: 1.5%;
+  }
+
+  #main-page-contact-me-btn{
+    margin: 2% 0 0 44%;
+  }
+  
+  .social  {
+    margin-top: 2%;
+  }
+  
+  .social #page-main-btn-linkedin {
+    margin: 0 0 0 47%;
+  }
+
+  #page-experience-title{
+    margin-top: 18%;
+  }
+
+  #page-about-me{
+    margin-top: 18%;
+  }
+
+}
+
+@media (max-width: 1200px) { /* ------------------------------------------------------------------------------------*/
+
+#page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  align-content: center
+}
+
+#page-main #me {
+  position: absolute;
+  width: 40%;
+  margin: 40% 0 0 0;
+  grid-column: 1;
+  grid-row: 2; 
+}
+
+#page-main #main-page-hello {
+  position: absolute;
+  text-align: center;
+  margin: 10% 0 50% 0;
+
+}
+
+#page-main #main-page-introduction {
+position: absolute;
+text-align: center;
+margin: 10% 0 35% 0;
+
+}
+
+#page-main #main-page-profession {
+  position: absolute;
+  margin: 10% 0 20% 0;
+}
+
+#page-main button { 
+font-size: x-large;
+padding: 20px;
+}
+
+#main-page-contact-me-btn{
+  margin: 100vw 0 0 0;
+}
+
+.social{
+margin-top: 1%;
+display: inline-flex;
+
+}
+
+.social #page-main-btn-linkedin {
+  margin: 0 3% 0 0;
+}
+
+
+#page-about-me{
+  height: 60vh;
+  margin-top: 50%;
+  margin-bottom: 10%;
+}
+
+#page-about-me h2 {
+  font-size: xx-large;
+}
+
+#page-about-me p {
+  font-size: x-large;
+  padding: 5%;
+}
+
+#page-experience-title{
+  font-size: x-large;
+  margin-top: 60%;
+  margin-bottom: 3%;
+}
+
+#page-projects{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25%;
+}
+
+#page-projects h2{
+  font-size: xx-large;
+  margin: 0 0 10% 0;
+  padding: 0;
+  
+}
+
+#page-projects h4{
+  font-size: x-large;
+  margin: 10% 0 10% 0;
+  padding: 1%;
+}
+
+#page-projects img {
+  width: 250px;
+  height: 250px;
+  margin: 0;
+  align-items: center;
+}
+}
+
+@media (max-width: 920px) {
+  #page-experience-title{
+    margin-top: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+
+ 
+  #page-main button {
+  font-size: x-large;
+  }
+
+  #page-about-me{
+  margin-top: 15%;
+  }
+
+  #page-experience-title{
+  margin-top: 110%;
+  }
+
+  #page-experience{
+  margin-top: 10%;
+  }
+
+  #page-projects{
+  margin-top: 55%;
+  }
+
+  .hamburguer{
+    display: block;
+    z-index: 1;
+    flex-direction: row-reverse;
+  }
+
+  #menu {
+    padding: 0;
+  }
+  
+  #menu #menu-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vw;
+    background-image: var(--backgroundImage); 
+    z-index: 999;
+    margin-top: 10px;
+  }
+
+  #menu li {
+    text-align: center;
+    padding-top: 35px;
+  }
+  
+  #menu li a:hover {
+    color: var (--fontColorHover);
+  }
+
+  #languages ol{
+    border: none;
+    margin-left: 40vw;
+  }
+
+  #page-experience-title{
+    margin-top: 120%;
+  }
+
+}
+
+@media (max-width: 590px) {
+
+  #page-main #main-page-hello {
+    margin: 0 0 100vw 0;
+    font-size: 30px;
+  }
+  
+  #page-main #main-page-introduction {
+    margin: 0 0 80vw 0;
+    font-size: 30px;
+  }
+  
+  #page-main #main-page-profession {
+    margin: 0 0 60vw 0;
+    font-size: 20px;
+  }
+
+  #page-about-me{
+    height: 55vw;
+  } 
+
+  #main-page-contact-me-btn{
+    margin: 60vw 0 0 0;
+  }
+
+  #page-main #me{
+    margin: 0 0 10vw 0;
+    border: 4px solid var(--fontColor);
+  }
+
+  #page-main button{
+    padding: 10px;
+  }
+
+  #page-experience-title{
+    margin-top: 200%;
+  }
+
+  #page-projects{
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+
+#page-experience-title{
+  margin-top: 230%;
+}
+
+#page-experience{
+  margin-top: 10%;
+}
+
+#page-projects{
+  margin-top: 70%;
+}
+}
+
+@media (max-width: 432px) {
+  #page-experience-title{
+    margin-top: 280%;
+  }
+}
+
+@media (max-width: 397px) {
+
+  #page-main #main-page-hello {
+    font-size: x-large;
+  }
+  
+  #page-main #main-page-introduction {
+    font-size: x-large;
+  }
+  
+ #page-main #main-page-profession {
+    font-size: large;
+  }
+
+ #main-page-contact-me-btn{
+  margin: 80vw 0 0 0;
+ }
+  
+  #page-about-me{
+    margin-top: 30%;
+  }
+  
+  #page-experience-title{
+    margin-top: 360%;
+  }
+  
+  #page-experience{
+    margin-top: 10%;
+  }
+  
+  #page-projects{
+    margin-top: 90%;
+  }
+  }
