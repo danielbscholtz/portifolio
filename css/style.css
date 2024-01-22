@@ -627,31 +627,45 @@ display: inline-flex;
 }
 
 
-@media (max-width: 397px) {
+@media (max-width: 420px) {
 
   #page-main #main-page-hello,
   #page-main #main-page-introduction {
     font-size: x-large;
   }
- #page-main #main-page-profession {
+  #page-main #main-page-profession {
     font-size: large;
+    margin-bottom: 20vw;
   }
+
+  #page-main #main-page-hello{
+    margin-bottom: 50vw;
+  }
+
+  #page-main #main-page-introduction{
+    margin-bottom: 35vw;
+  }
+
+  #page-main #me{
+    margin-top: 30vw;
+  }
+
 
  #main-page-contact-me-btn{
-  margin: 80vw 0 0 0;
+  margin: 100vw 0 0 0;
  }
   
-  #page-about-me{
+  #page-about-me p {
     font-size: medium;
 
   }
   
-  #page-experience{
+  #page-experience h2{
     font-size: medium;
   }
   
-  #page-projects{
+  #page-projects h4{
     font-size: medium;
   }
-  
+
 }
