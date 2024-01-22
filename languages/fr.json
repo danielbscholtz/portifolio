@@ -1,5 +1,4 @@
 {
-    "nav-menu-home": "Accueil",
     "nav-menu-about-me": "À propos de moi",
     "nav-menu-projects": "Projets",
     "nav-menu-contact": "Expérience",
@@ -8,7 +7,7 @@
     "main-page-profession": "Développeur de logiciels",
     "main-page-contact-me-btn": "Contactez <i class='fa-regular fa-envelope'></i>",
     "about-me-page-title": "À propos de moi",
-    "about-me-page-paragraph-one": "Développeur de logiciels basé à Montréal, actuellement étudiant en programmation informatique au Collège Lasalle. Compétent en Python, Java, C#, JS, HTML, CSS, et expert dans des bases de données telles que MySQL, MongoDB et SSMS.",
+    "about-me-page-paragraph-one": "Développeur de logiciels basé à Montréal, actuellement étudiant en programmation informatique au Collège Lasalle. Compétent en Python, Java, C#, JS, HTML, CSS, et expert dans des bases de données telles que MySQL, MongoDB et Sql server.",
     "about-me-page-paragraph-two": "Au Brésil, j'ai servi en tant que lieutenant dans l'Armée brésilienne pendant 4 ans, acquérant des compétences en travail d'équipe, résolution de problèmes, communication efficace, leadership, gestion du temps, résolution de conflits, pensée critique et adaptabilité.",
     "about-me-page-paragraph-three": "Je m'engage à appliquer une approche disciplinée et mes compétences techniques pour exceller dans le développement de logiciels. Ouvert à la connexion et à la collaboration sur des projets impactants.",
     "page-projects-title": "Projets",

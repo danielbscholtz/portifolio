@@ -67,7 +67,7 @@
 
   #languages ol.show {
     display: block;
-    position: relative;
+    position: absolute;
   }
 
   #languages ol li a {
@@ -133,16 +133,7 @@
       margin-top: 20%;
       grid-column: 2;
       grid-row: 1/3; 
-      filter:
-      grayscale(10%) brightness(80%);
   }
-
-    #page-main #me:hover {
-      transform: scale(1.1);
-      transition: 0.4s;
-      filter:
-      grayscale(0%) brightness(100%);
-    }
 
     #page-main #main-page-hello {
         font-family: 'Roboto Mono', monospace;
@@ -590,6 +581,10 @@ display: inline-flex;
   
   #menu li a:hover {
     color: var (--fontColorHover);
+  }
+
+  #languages{
+    margin-bottom: 7%;
   }
 
   #languages ol{

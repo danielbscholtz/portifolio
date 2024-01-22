@@ -1,5 +1,4 @@
 {
-    "nav-menu-home": "Home",
     "nav-menu-about-me": "About me",
     "nav-menu-projects": "Projects",
     "nav-menu-contact": "Experience",
@@ -8,7 +7,7 @@
     "main-page-profession": "Software Developer",
     "main-page-contact-me-btn":  "Contact-me <i class='fa-regular fa-envelope'></i>",
     "about-me-page-title": "About me",
-    "about-me-page-paragraph-one": "Software developer based in Montreal, currently studying Computer Programming at Lasalle College. Proficient in Python, Java, C#, JS, HTML, CSS, and knowledgeable in databases such as MySQL, MongoDB, and SSMS.",
+    "about-me-page-paragraph-one": "Software developer based in Montreal, currently studying Computer Programming at Lasalle College. Proficient in Python, Java, C#, JS, HTML, CSS, and knowledgeable in databases such as MySQL, MongoDB, and Sql server.",
     "about-me-page-paragraph-two": "In Brazil, I served as a lieutenant in the Brazilian Army for 4 years, acquiring skills in teamwork, problem-solving, effective communication, leadership, time management, conflict resolution, critical thinking, and adaptability.",
     "about-me-page-paragraph-three": "I'm committed to applying a disciplined approach and my technical skills to excel in software development. Open to connecting and collaborating on impactful projects.",
     "page-projects-title": "Projects",

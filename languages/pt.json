@@ -1,5 +1,4 @@
 {
-    "nav-menu-home": "Início",
     "nav-menu-about-me": "Sobre mim",
     "nav-menu-projects": "Projetos",
     "nav-menu-contact": "Experiência",
@@ -8,7 +7,7 @@
     "main-page-profession": "Desenvolvedor de Software",
     "main-page-contact-me-btn": "Contate-me <i class='fa-regular fa-envelope'></i>",
     "about-me-page-title": "Sobre mim",
-    "about-me-page-paragraph-one": "Desenvolvedor de software com base em Montreal, estudante de Programação de Computadores no Lasalle College. Proficiente em Python, Java, C#, JS, HTML, CSS, e com conhecimentos em bancos de dados como MySQL, MongoDB e SSMS.",
+    "about-me-page-paragraph-one": "Desenvolvedor de software com base em Montreal, estudante de Programação de Computadores no Lasalle College. Proficiente em Python, Java, C#, JS, HTML, CSS, e com conhecimentos em bancos de dados como MySQL, MongoDB e Sql server.",
     "about-me-page-paragraph-two": "No Brasil, atuei como tenente no Exército Brasileiro por 4 anos, o que me proporcionou aquisição de habilidades como trabalho em equipe, resolução de problemas, comunicação eficaz, liderança, gestão do tempo, resolução de conflitos, pensamento crítico e adaptabilidade.",
     "about-me-page-paragraph-three": "Estou comprometido em aplicar uma abordagem disciplinada e minhas habilidades técnicas para me destacar no desenvolvimento de software. Aberto para conectar e colaborar em projetos impactantes.",
     "page-projects-title": "Projetos",
