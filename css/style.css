@@ -54,7 +54,6 @@
     }
 
  
-
     #menu li a:hover{
       color: var(--fontColorHover);
     }
@@ -85,12 +84,12 @@
   }
 
   .hamburguer{
-    margin-top: 3vw;
+    margin-top: 4.5vw;
     margin-left: 88vw;
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid var(--fontColor);
+    border-top: 3.5px solid var(--fontColor);
     cursor: pointer;
   }
 
@@ -124,7 +123,7 @@
       grid-template-columns: 50fr 50fr;
       grid-template-rows: 0.1fr 0fr 0.1fr; 
       justify-content: space-between;
-      height: 100vh;
+      height: auto;
   }
 
   #page-main #me {
@@ -220,7 +219,9 @@
   }
 
   #page-about-me{
-    height: 40vh;
+    height: auto;
+    z-index: 1;
+    margin-top: 15vw;
   }
 
   #page-about-me h2 {
@@ -240,6 +241,7 @@
     display: grid;
     grid-template-columns: 25fr 25fr 25fr 25fr;
     grid-template-rows: 3fr 8fr 8fr;
+    height: auto;
     margin-top: 10%;
   }
 
@@ -294,14 +296,16 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 70vh;
+    height: auto;
+    position: relative;
+    z-index: 2;
   }
 
   #page-experience-title{
     font-family: 'Roboto Mono', monospace;
     color:  var(--fontColor);
     text-align: center;
-    margin-top: 20%;
+    margin-top: 0%;
   }
 
   #page-experience h2 {
@@ -461,98 +465,38 @@
     padding: 0.4%;
   }
 
-@media (max-width: 1400px) {
 
-  #page-main {
-    display: grid;
-    grid-template-columns: 60fr 40fr;
-  }
 
-  #page-main #main-page-hello{
-    font-size: 40px;
-    margin-left: 15%;
-    margin-top: 55%;
-  }
-
-  #page-main #main-page-introduction{
-    font-size: 40px;
-    margin-top: 62%;
-    margin-left: 15%;
-  }
-
-  #page-main #main-page-profession{
-    font-size: 30px;
-    margin-top: 70%;
-    margin-left: 15%;
-  }
-
-  #page-main #me{
-    width: 70%;
-    margin-top: 65%;
-    border: 7px solid var(--fontColor);
-  }
-
-  #page-main button{
-    padding: 1.5%;
-  }
-
-  #main-page-contact-me-btn{
-    margin: 2% 0 0 44%;
-  }
-  
-  .social  {
-    margin-top: 2%;
-  }
-  
-  .social #page-main-btn-linkedin {
-    margin: 0 0 0 47%;
-  }
-
-  #page-experience-title{
-    margin-top: 18%;
-  }
-
-  #page-about-me{
-    margin-top: 18%;
-  }
-
-}
-
-@media (max-width: 1200px) { /* ------------------------------------------------------------------------------------*/
+@media (max-width: 1200px) { /* First media */
 
 #page-main {
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center; 
-  align-content: center
 }
 
 #page-main #me {
   position: absolute;
   width: 40%;
-  margin: 40% 0 0 0;
-  grid-column: 1;
-  grid-row: 2; 
+  margin: 0;
 }
 
 #page-main #main-page-hello {
   position: absolute;
   text-align: center;
-  margin: 10% 0 50% 0;
-
+  margin: 0 0 70% 0;
 }
 
 #page-main #main-page-introduction {
 position: absolute;
 text-align: center;
-margin: 10% 0 35% 0;
-
+margin: 0 0 60% 0;
 }
 
 #page-main #main-page-profession {
   position: absolute;
-  margin: 10% 0 20% 0;
+  margin: 0 0 50% 0;
 }
 
 #page-main button { 
@@ -561,7 +505,7 @@ padding: 20px;
 }
 
 #main-page-contact-me-btn{
-  margin: 100vw 0 0 0;
+  margin: 70vw 0 0 0;
 }
 
 .social{
@@ -575,12 +519,6 @@ display: inline-flex;
 }
 
 
-#page-about-me{
-  height: 60vh;
-  margin-top: 50%;
-  margin-bottom: 10%;
-}
-
 #page-about-me h2 {
   font-size: xx-large;
 }
@@ -592,8 +530,6 @@ display: inline-flex;
 
 #page-experience-title{
   font-size: x-large;
-  margin-top: 60%;
-  margin-bottom: 3%;
 }
 
 #page-projects{
@@ -601,14 +537,12 @@ display: inline-flex;
   width: 100%;
   flex-direction: column;
   text-align: center;
-  margin-top: 25%;
 }
 
 #page-projects h2{
   font-size: xx-large;
   margin: 0 0 10% 0;
   padding: 0;
-  
 }
 
 #page-projects h4{
@@ -625,34 +559,8 @@ display: inline-flex;
 }
 }
 
-@media (max-width: 920px) {
-  #page-experience-title{
-    margin-top: 100%;
-  }
-}
 
-@media (max-width: 690px) {
-
- 
-  #page-main button {
-  font-size: x-large;
-  }
-
-  #page-about-me{
-  margin-top: 15%;
-  }
-
-  #page-experience-title{
-  margin-top: 110%;
-  }
-
-  #page-experience{
-  margin-top: 10%;
-  }
-
-  #page-projects{
-  margin-top: 55%;
-  }
+@media (max-width: 690px) { /* Hamburguer menu */
 
   .hamburguer{
     display: block;
@@ -673,7 +581,6 @@ display: inline-flex;
     height: 100vw;
     background-image: var(--backgroundImage); 
     z-index: 999;
-    margin-top: 10px;
   }
 
   #menu li {
@@ -687,89 +594,45 @@ display: inline-flex;
 
   #languages ol{
     border: none;
-    margin-left: 40vw;
+    margin-left: 42vw;
   }
 
-  #page-experience-title{
-    margin-top: 120%;
-  }
-
-}
-
-@media (max-width: 590px) {
-
-  #page-main #main-page-hello {
-    margin: 0 0 100vw 0;
-    font-size: 30px;
-  }
-  
+  #page-main #main-page-hello,   
   #page-main #main-page-introduction {
-    margin: 0 0 80vw 0;
-    font-size: 30px;
+      font-size: x-large;
   }
   
-  #page-main #main-page-profession {
-    margin: 0 0 60vw 0;
-    font-size: 20px;
-  }
-
-  #page-about-me{
-    height: 55vw;
+  #page-main #main-page-profession,
+  #page-main button {
+    font-size: large;
   } 
 
-  #main-page-contact-me-btn{
-    margin: 60vw 0 0 0;
-  }
-
+  
   #page-main #me{
-    margin: 0 0 10vw 0;
-    border: 4px solid var(--fontColor);
+    border: 3px solid var(--fontColor);
   }
 
   #page-main button{
     padding: 10px;
   }
 
+  #page-about-me{
+    margin-top: 40vw;
+  }
+
   #page-experience-title{
-    margin-top: 200%;
+    margin-bottom: 10%;
   }
 
-  #page-projects{
-    margin-top: 30%;
-  }
 }
 
-@media (max-width: 500px) {
-
-#page-experience-title{
-  margin-top: 230%;
-}
-
-#page-experience{
-  margin-top: 10%;
-}
-
-#page-projects{
-  margin-top: 70%;
-}
-}
-
-@media (max-width: 432px) {
-  #page-experience-title{
-    margin-top: 280%;
-  }
-}
 
 @media (max-width: 397px) {
 
-  #page-main #main-page-hello {
-    font-size: x-large;
-  }
-  
+  #page-main #main-page-hello,
   #page-main #main-page-introduction {
     font-size: x-large;
   }
-  
  #page-main #main-page-profession {
     font-size: large;
   }
@@ -779,18 +642,16 @@ display: inline-flex;
  }
   
   #page-about-me{
-    margin-top: 30%;
-  }
-  
-  #page-experience-title{
-    margin-top: 360%;
+    font-size: medium;
+
   }
   
   #page-experience{
-    margin-top: 10%;
+    font-size: medium;
   }
   
   #page-projects{
-    margin-top: 90%;
+    font-size: medium;
   }
-  }
+  
+}
