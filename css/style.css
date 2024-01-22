@@ -629,6 +629,10 @@ display: inline-flex;
 
 @media (max-width: 420px) {
 
+  #languages ol{
+    margin-left: 40vw;
+  }
+
   #page-main #main-page-hello,
   #page-main #main-page-introduction {
     font-size: x-large;
