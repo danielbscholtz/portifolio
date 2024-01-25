@@ -5,7 +5,7 @@
   }
 
   [data-theme="dark"] {
-    --backgroundImage: url(../media/background-image-dark.jpg);
+    --backgroundImage: black;
     --fontColor: #f3e0d0;
     --fontColorHover: rgba(160, 174, 236, 0.815);
   }
