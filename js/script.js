@@ -42,17 +42,26 @@ window.location.reload();
 
 // function responsible to set the atribute to the local storage
 function applyTheme(theme) {
-    document.documentElement.setAttribute("data-theme", theme);
+    return new Promise((resolve, reject) => {
+      try {
+        document.documentElement.setAttribute("data-theme", theme);
+        resolve();
+      } catch (error) {
+        reject(error);
+      }
+    });
 }
 
-applyTheme(themeSystem);
 
 //function that is responsible for the user be able to change the mode
-switchMode.addEventListener("click", () => {
-    let newTheme = themeSystem === "light" ? "dark" : "light";
-    localStorage.setItem("themeSystem", newTheme);
-    applyTheme(newTheme);
-    window.location.reload();
+switchMode.addEventListener("click", async () => {
+    try {
+      let newTheme = themeSystem === "light" ? "dark" : "light";
+      localStorage.setItem("themeSystem", newTheme);
+      await applyTheme(newTheme);
+    } catch (error) {
+      console.error('Erro to apply theme:', error);
+    }
 });
 
 // function responsible to switch the mode icon 
@@ -66,6 +75,7 @@ function switchIcon(){
 }
 
 switchIcon();
+applyTheme(themeSystem);
 
 //function responsible for show when the user click in the icon, options of languages available in the website
 languages.addEventListener('click', () => {
