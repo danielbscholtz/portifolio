@@ -1,7 +1,7 @@
 {
     "nav-menu-about-me": "About me",
     "nav-menu-projects": "Projects",
-    "nav-menu-contact": "Experience",
+    "nav-menu-contact": "Skills",
     "main-page-hello": "Hello World!",
     "main-page-introduction": "I'm Daniel Scholtz.",
     "main-page-profession": "Software Developer",
@@ -19,7 +19,7 @@
     "page-projects-ios-app": "iOS application for French verb conjugation.",
     "page-projects-digit-game": "Logic game for kids.",
     "page-projects-portifolio": "My portifolio website.",
-    "page-projects-experience": "Experience",
+    "page-projects-experience": "Skills",
     "contact-me": "Contact me",
     "social-media": "Social Media"
   }

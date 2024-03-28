@@ -1,7 +1,7 @@
 {
     "nav-menu-about-me": "À propos de moi",
     "nav-menu-projects": "Projets",
-    "nav-menu-contact": "Expérience",
+    "nav-menu-contact": "Habiletés",
     "main-page-hello": "Bonjour le monde!",
     "main-page-introduction": "J'suis Daniel Scholtz.",
     "main-page-profession": "Développeur de logiciels",
@@ -19,7 +19,7 @@
     "page-projects-ios-app": "Application iOS pour la conjugaison des verbes en français.",
     "page-projects-digit-game": "Jeu logique pour les enfants.",
     "page-projects-portifolio": "Mon site de portifolio.",
-    "page-projects-experience": "Expérience",
+    "page-projects-experience": "Habiletés",
     "contact-me": "Contactez",
     "social-media": "Médias Sociaux"
 }

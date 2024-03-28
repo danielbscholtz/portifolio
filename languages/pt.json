@@ -1,7 +1,7 @@
 {
     "nav-menu-about-me": "Sobre mim",
     "nav-menu-projects": "Projetos",
-    "nav-menu-contact": "Experiência",
+    "nav-menu-contact": "Skills",
     "main-page-hello": "Olá Mundo!",
     "main-page-introduction": "Prazer, Daniel Scholtz.",
     "main-page-profession": "Desenvolvedor de Software",
@@ -19,7 +19,7 @@
     "page-projects-ios-app": "Aplicativo iOS para conjugação de verbos em francês.",
     "page-projects-digit-game": "Jogo lógico para crianças.",
     "page-projects-portifolio": "Meu website.",
-    "page-projects-experience": "Experiência",
+    "page-projects-experience": "Skills",
     "contact-me": "Entre em Contato",
     "social-media": "Redes Sociais"
 }

@@ -383,49 +383,49 @@
 
   @keyframes anim-py {
     100% {
-      stroke-dashoffset: 240;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-csharp {
     100% {
-      stroke-dashoffset: 150;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-js {
     100% {
-      stroke-dashoffset: 180;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-java {
     100% {
-      stroke-dashoffset: 260;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-html-css {
     100% {
-      stroke-dashoffset: 180;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-sql {
     100% {
-      stroke-dashoffset: 220;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-mongodb {
     100% {
-      stroke-dashoffset: 250;
+      stroke-dashoffset: 10;
     }
   }
 
   @keyframes anim-postman {
     100% {
-      stroke-dashoffset: 300;
+      stroke-dashoffset: 10;
     }
   }
 
